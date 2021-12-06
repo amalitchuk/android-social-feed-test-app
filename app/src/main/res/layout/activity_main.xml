@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_social_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="smart Invites" />
+
+            <Button
+                android:id="@+id/btn_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="social" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post" />
+
+            <Button
+                android:id="@+id/btnGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group" />
+
+            <Button
+                android:id="@+id/btnGroupMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group members" />
+
+            <Button
+                android:id="@+id/btnLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trigger link" />
+
+            <Button
+                android:id="@+id/btnCustomEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom event" />
+
+            <Button
+                android:id="@+id/btnCoupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Claim coupons" />
+
+            <Button
+                android:id="@+id/btnCouponsCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create coupons" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.jraska.console.Console
+        android:id="@+id/c_output"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
