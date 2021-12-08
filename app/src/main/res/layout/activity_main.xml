@@ -16,13 +16,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
 
             <Button
                 android:id="@+id/btn_social_ui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="smart Invites" />
+                android:text="smart invites" />
+
+            <Button
+                android:id="@+id/btn_feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="activty feed" />
 
             <Button
                 android:id="@+id/btn_social"
@@ -34,43 +42,49 @@
                 android:id="@+id/btnPost"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Post" />
+                android:text="post" />
 
             <Button
                 android:id="@+id/btnGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Group" />
+                android:text="group" />
 
             <Button
                 android:id="@+id/btnGroupMembers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Group members" />
+                android:text="group members" />
 
             <Button
                 android:id="@+id/btnLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Trigger link" />
+                android:text="trigger link" />
 
             <Button
                 android:id="@+id/btnCustomEvent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Custom event" />
+                android:text="custom event" />
 
             <Button
                 android:id="@+id/btnCoupons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Claim coupons" />
+                android:text="claim coupons" />
 
             <Button
                 android:id="@+id/btnCouponsCreate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Create coupons" />
+                android:text="create coupons" />
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="facebook" />
 
         </LinearLayout>
     </ScrollView>
