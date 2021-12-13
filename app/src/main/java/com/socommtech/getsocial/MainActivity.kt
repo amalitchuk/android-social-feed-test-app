@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.socommtech.getsocial.databinding.ActivityMainBinding
 import im.getsocial.sdk.Communities
 import im.getsocial.sdk.GetSocial
+import im.getsocial.sdk.Invites
+import im.getsocial.sdk.invites.ReferralData
 import im.getsocial.sdk.communities.*
 import im.getsocial.sdk.notifications.NotificationsQuery
 import im.getsocial.sdk.ui.GetSocialUi
@@ -87,6 +89,12 @@ class MainActivity : AppCompatActivity() {
 //        NotificationCenterViewBuilder.create(query).show()
         GetSocialUi.loadConfiguration("getsocial-dark/ui-config.json")
 
+        Invites.setReferralDataListener { referralData: ReferralData ->
+            val navigationPath = referralData.linkParams["\$token"]  // predefined key
+            val customValue1 = referralData.linkParams["custom_key_1"] // custom key
+            val isGuaranteedMatch = referralData.isGuaranteedMatch // added metadata
 
+            "App started with referral data: ${referralData}".consolePrint()
+        }
     }
 }
